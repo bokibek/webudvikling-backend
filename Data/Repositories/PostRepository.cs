@@ -20,7 +20,7 @@ namespace Data.Repositories
         public Guid Create(CreatePostDto createPostDto)
         {
             var account = AccountDatabase.Accounts.Find(x => x.Id == createPostDto.AuthorId);
-
+            
             if (account == null)
             {
                 throw new Exception("Account does not exists");
@@ -30,7 +30,7 @@ namespace Data.Repositories
             {
                 Id = Guid.NewGuid(),
                 Content = createPostDto.Content,
-                AccountId = createPostDto.AuthorId,
+                AuthorId = createPostDto.AuthorId,
                 ParentPostId = createPostDto.ParentPostId,
             };
 

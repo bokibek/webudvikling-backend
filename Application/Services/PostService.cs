@@ -22,7 +22,7 @@ namespace Application.Services
         {
             return _postRepository
                 .GetAllPosts()
-                .Where(x => x.AccountId == id)
+                .Where(x => x.AuthorId == id)
                 .ToArray();
         }
 

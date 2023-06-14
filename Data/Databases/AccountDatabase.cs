@@ -32,8 +32,8 @@ namespace Data.Databases
                 FirstName = "Anita",
                 LastName = "",
                 Address = "Folketinget",
-                Username = "madsfolke",
-                Email = "madsmads@gmail.com",
+                Username = "anitafolke",
+                Email = "anitaanita@gmail.com",
             }
         };
 

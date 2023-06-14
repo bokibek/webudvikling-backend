@@ -11,7 +11,7 @@ namespace Data.Databases
                 Id = new Guid("5a3cae27-a030-49d2-b45e-b23bd1e88cc0"),
                 Content = "Dette er et opslag",
                 CreatedAt = DateTime.Now,
-                AccountId = new Guid("b9ae56e7-1a96-46d5-96f9-88229d8cfad5")
+                AuthorId = new Guid("b9ae56e7-1a96-46d5-96f9-88229d8cfad5")
             },
 
             new Post
@@ -19,7 +19,7 @@ namespace Data.Databases
                 Id = new Guid("5a3cae27-a030-49d2-b45e-b23bd1e88cc1"),
                 Content = "Endnu et opslag!!!",
                 CreatedAt = DateTime.Now,
-                AccountId = new Guid("b9ae56e7-1a96-46d5-96f9-88229d8cfad5")
+                AuthorId = new Guid("b9ae56e7-1a96-46d5-96f9-88229d8cfad5")
             }
         };
     }

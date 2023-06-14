@@ -7,12 +7,14 @@ namespace Application.Services
 {
     public class AccountService : IAccountService
     {
+        //IAccountRepository injekteret igennem en constructor
         private readonly IAccountRepository _accountRepository;
         public AccountService(IAccountRepository accountRepository)
         {
             this._accountRepository = accountRepository;
         }
 
+        //Abstraction mellem AccountRepository og koden
         public AccountViewModel[] GetAllAccounts()
         {
             return _accountRepository.GetAllAccounts()

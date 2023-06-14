@@ -15,6 +15,7 @@ namespace Data.Repositories
 
         public Account[] GetAllAccounts()
         {
+
             return AccountDatabase.Accounts.ToArray();
         }
 
@@ -47,6 +48,16 @@ namespace Data.Repositories
             account.Address = updateAccountDto.Address;  
             account.PostalCode = updateAccountDto.PostalCode;
             account.City = updateAccountDto.City;
+
+            if (updateAccountDto.PostalCode >= 1000 && updateAccountDto.PostalCode <= 9990)
+            {
+                account.PostalCode = updateAccountDto.PostalCode;
+            }
+            else
+            {
+                throw new Exception("Postal code must be a four-digit number.");
+            }
+
             return account;
         }
 

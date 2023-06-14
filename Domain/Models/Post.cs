@@ -10,6 +10,6 @@
 
         public Guid? ParentPostId { get; set; }
 
-        public Guid AccountId { get; set; }
+        public Guid AuthorId { get; set; }
     }
 }
